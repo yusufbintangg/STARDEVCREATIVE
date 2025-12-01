@@ -29,6 +29,7 @@ export default function Footer() {
             <li>Integrasi API (Midtrans, WhatsApp, dll)</li>
             <li>Optimasi SEO</li>
             <li>Desain Responsif</li>
+            <li>Hosting & Domain</li>
           </ul>
         </div>
 
@@ -40,6 +41,7 @@ export default function Footer() {
               <li>Kontak</li>
               <li>Portofolio</li>
               <li>FAQ</li>
+              
             </ul>
         </div>
       </div>
