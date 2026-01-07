@@ -31,7 +31,7 @@ const CallToAction = () => {
               transition={{ duration: 0.6, delay: 0.4 }}
               viewport={{ once: true }}
             >
-              Banyak bisnis punya website — tapi tidak semuanya mampu menarik pelanggan.
+              Banyak bisnis punya website tapi tidak semuanya mampu menarik pelanggan.
               Tanpa strategi dan desain yang tepat, website Anda hanya akan jadi pajangan digital,
               bukan alat penggerak bisnis yang sesungguhnya.
             </motion.p>

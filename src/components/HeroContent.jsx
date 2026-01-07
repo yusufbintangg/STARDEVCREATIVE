@@ -35,7 +35,7 @@ export default function HeroContent() {
           </h1>
 
           <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold mb-6 opacity-90">
-            Kami bantu Anda naikan omset dan bangun website Bisnis Anda. Bukan cuma tampil — tapi <span className="text-blue-300">bekerja dan menghasilkan</span>.
+            Kami bantu Anda naikan omset dan bangun website Bisnis Anda. Bukan cuma tampil tapi <span className="text-blue-300">bekerja dan menghasilkan</span>.
           </h2>
 
           <div className="flex flex-col justify-center items-center gap-4 px-4">
