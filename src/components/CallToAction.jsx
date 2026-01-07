@@ -117,7 +117,7 @@ const CallToAction = () => {
               viewport={{ once: true }}
             >
               Di dunia digital, tampilan website Anda menentukan bagaimana calon pelanggan menilai bisnis Anda.
-              Desain yang asal-asalan bisa membuat mereka ragu — bahkan pergi tanpa memberi kesempatan kedua.
+              Desain yang asal-asalan bisa membuat mereka ragu bahkan pergi tanpa memberi kesempatan kedua.
             </motion.p>
             <motion.p
               className="text-black-700 leading-relaxed mb-8"
