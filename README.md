@@ -1,190 +1,246 @@
-# 🚀 Next.js Project
+# StarDev Creative Landing Page
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new)
+> Professional web development agency landing page built with Next.js 15, React 19, and Tailwind CSS 4.
+
 [![Next.js](https://img.shields.io/badge/Next.js-15-black?logo=next.js)](https://nextjs.org/)
-[![Made by StarDev](https://img.shields.io/badge/Made%20by-StarDev-blue)](https://vercel.com/)
-
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+[![React](https://img.shields.io/badge/React-19-61DAFB?logo=react)](https://react.dev/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4-06B6D4?logo=tailwind-css)](https://tailwindcss.com/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript)](https://www.typescriptlang.org/)
+[![License](https://img.shields.io/badge/License-ISC-green)](LICENSE)
 
 ---
 
-## 🧠 Getting Started
+## 📌 Project Overview
 
-First, run the development server:
+StarDev Creative is a modern, interactive landing page for a Indonesian web development agency. The website showcases their web development services including company profiles, e-commerce, portfolio sites, hotel booking systems, and F&B management systems. Built with performance and SEO in mind, featuring smooth animations andFully responsive design.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+**Live Demo**: [https://www.stardevcreative.com](https://www.stardevcreative.com)
+
+---
+
+## 🛠 Tech Stack
+
+| Category | Technology |
+|----------|------------|
+| **Framework** | Next.js 15.5.4 |
+| **UI Library** | React 19.1.0 |
+| **Styling** | Tailwind CSS 4 |
+| **Animations** | Framer Motion 12, GSAP 3, Three.js |
+| **Smooth Scroll** | @studio-freight/lenis |
+| **Icons** | Lucide React |
+| **UI Components** | Radix UI (Avatar, Dropdown, Label, Slot) |
+| **Fonts** | Geist, Inter (Next.js fonts) |
+| **Deployment** | Vercel |
+
+---
+
+## ✨ Key Features
+
+- **Responsive Design** - Fully optimized for desktop, tablet, and mobile devices
+- **Interactive Animations** - Smooth entrance animations using Framer Motion
+- **Service Showcase** - Display of 6 main service categories with pricing
+- **Portfolio Carousel** - Infinite bidirectional draggable portfolio gallery
+- **Pricing Tables** - Comprehensive pricing packages (18 packages across 6 categories)
+- **Contact Form** - Functional contact form with validation
+- **WhatsApp Integration** - Direct WhatsApp contact button
+- **SEO Optimized** - Complete meta tags, Open Graph, Twitter Cards,Schema.org JSON-LD
+- **Smooth Scrolling** - Lenis smooth scroll implementation
+- **Multi-section Layout** - Hero, Services, Pricing, About, Portfolio, Contact sections
+- **Mobile Navigation** - Responsive hamburger menu with smooth scroll navigation
+
+---
+
+## 📁 Project Structure
+
+```
+STARDEVCREATIVE/
+├── public/
+│   ├── portfolio/           # Portfolio project screenshots
+│   ├── project/            # Project/demo screenshots
+│   └── servicepage/        # Service page images
+├── src/
+│   ├── app/
+│   │   ├── globals.css     # Global styles
+│   │   ├── layout.js       # Root layout with SEO metadata
+│   │   └── page.js         # Main landing page
+│   ├── components/
+│   │   ├── ui/            # Reusable UI components
+│   │   ├── Header.jsx      # Navigation header
+│   │   ├── Footer.jsx      # Footer component
+│   │   ├── HeroContent.jsx
+│   │   ├── Service.jsx     # Services section
+│   │   ├── PricingSection.jsx
+│   │   ├── Portfolio.jsx  # Portfolio carousel
+│   │   ├── ContactSection.jsx
+│   │   ├── AboutUs.jsx
+│   │   ├── CallToAction.jsx
+│   │   ├── SupportService.jsx
+│   │   ├── WorkFlow.jsx
+│   │   └── WhatsAppButton.jsx
+│   ├── data/
+│   │   └── pricingData.js # Pricing packages data
+│   └── lib/
+│       └── utils.js       # Utility functions
+├── components.json         # shadcn/ui components config
+├── eslint.config.mjs       # ESLint configuration
+├── jsconfig.json          # JavaScript config
+├── next.config.mjs        # Next.js configuration
+├── package.json           # Dependencies & scripts
+├── postcss.config.mjs     # PostCSS configuration
+└── tailwind.config.mjs   # Tailwind configuration
 ```
 
-Then open http://localhost:3000
- in your browser to see the result.
+---
 
-You can start editing the page by modifying app/page.js.
-The page auto-updates as you edit the file.
+## 🚀 Getting Started
 
-This project uses next/font
+### Prerequisites
 
-to automatically optimize and load Geist
-, a new font family for Vercel.
+Ensure you have the following installed:
 
-📚 Learn More
+- **Node.js** 18.x or higher
+- **npm** 9.x or higher (or yarn/pnpm/bun)
 
-To learn more about Next.js, check out these resources:
+> **Note**: This project uses Next.js 15 which requires Node.js 18+
 
-📘 Next.js Documentation
- — learn about Next.js features and API.
+### Installation
 
-🧩 Learn Next.js
- — an interactive Next.js tutorial.
+1. **Clone the repository**
+   ```bash
+   cd STARDEVCREATIVE
+   ```
 
-💡 Next.js GitHub Repository
- — feedback and contributions are welcome!
+2. **Install dependencies**
+   ```bash
+   npm install
+   # or
+   yarn install
+   # or
+   pnpm install
+   ```
 
-🌐 Deploy on Vercel
+3. **Start development server**
+   ```bash
+   npm run dev
+   ```
 
-The easiest way to deploy your Next.js app is to use the Vercel Platform
- — created by the same team behind Next.js.
+4. **Open browser**
+   Navigate to [http://localhost:3000](http://localhost:3000)
 
-1️⃣ Deploy via GitHub (Recommended)
+### Environment Variables
 
-This method enables automatic deployments every time you push updates to GitHub.
+This project does **not** require environment variables for local development. The contact form currently logs to console (demo mode).
 
-Steps:
+| Variable | Description | Required | Default |
+|----------|-------------|----------|---------|
+| `ANALYZE` | Enable bundle analysis | No | `false` |
 
-Push your project to GitHub:
+To enable bundle analyzer:
+```bash
+ANALYZE=true npm run build
+```
 
-git init
-git add .
-git commit -m "first commit"
-git push
-git branch -M main
-git remote add origin https://github.com/username/nama-project.git
-git push -u origin main
+---
 
+## 📜 Available Scripts
 
-Go to https://vercel.com/dashboard
-.
+| Command | Description |
+|---------|-------------|
+| `npm run dev` | Start development server with Turbopack |
+| `npm run build` | Build for production |
+| `npm run start` | Start production server |
+| `npm run lint` | Run ESLint |
 
-Click “Add New Project” → “Import Git Repository”.
+---
 
-Choose your repository.
+## 🔧 Deployment
 
-Configure settings (usually auto-detected):
+### Deploy to Vercel (Recommended)
 
-Framework Preset → Next.js
+The easiest deployment method for Next.js applications.
 
-Build Command → next build
+**Option 1: GitHub Integration (Recommended)**
 
-Output Directory → .next
+1. Push your project to GitHub:
+   ```bash
+   git init
+   git add .
+   git commit -m "Initial commit"
+   git branch -M main
+   git remote add origin https://github.com/username/stardev-creative.git
+   git push -u origin main
+   ```
 
-Click Deploy.
+2. Go to [Vercel Dashboard](https://vercel.com/dashboard)
 
-After build is complete, your live project will be available at:
+3. Click "Add New Project" → "Import Git Repository"
 
-https://your-project-name.vercel.app
+4. Select your repository
 
-2️⃣ Deploy via Vercel CLI (Manual Upload)
+5. Configure settings (auto-detected):
+   - Framework Preset: Next.js
+   - Build Command: `next build`
+   - Output Directory: `.next`
 
-If you prefer deploying directly from your terminal:
+6. Click "Deploy"
 
-Steps:
+**Option 2: Vercel CLI**
 
-Install the Vercel CLI:
-
+```bash
 npm install -g vercel
-
-
-Login to your account:
-
 vercel login
-
-
-Deploy the project:
-
-vercel
-
-
-Vercel will ask a few questions interactively (project name, scope, etc.).
-Once done, it’ll generate a live URL like:
-
-https://your-project.vercel.app
-
-
-For production deployment (recommended):
-
 vercel --prod
+```
 
-🔄 Update / Redeploy on Vercel
-If You Used GitHub (Auto-Deploy)
+### Deployment Checklist
 
-Whenever you make code changes, just commit and push:
+Before going live, verify:
 
-git add .
-git commit -m "update home page design"
-git push
+- [ ] Remove all console.log statements
+- [ ] Test contact form functionality
+- [ ] Verify all images load correctly
+- [ ] Check mobile navigation works
+- [ ] Verify SEO metadata (update domain in layout.js)
+- [ ] Test Lighthouse performance score
+- [ ] Update Schema.org organization data
 
+---
 
-Vercel will automatically:
+## 📸 Screenshots
 
-Rebuild the project
+> Add your own screenshots here
 
-Deploy the latest version
+| Section | Screenshot |
+|---------|-------------|
+| Hero | `public/project/screencapture-inezhomestay-2025-11-22-22_43_16.png` |
+| Services | `public/servicepage/` |
+| Portfolio | `public/portfolio/` |
 
-Keep your site live under the same domain
+---
 
-You can check the deployment status on your Vercel Dashboard
-.
+## 🔐 Security Notes
 
-If You Used CLI (Manual Deploy)
+- The `next.config.mjs` includes security headers (X-Frame-Options, X-Content-Type-Options, Referrer-Policy, Permissions-Policy)
+- Enable HTTPS in production (automatic with Vercel)
+- Update the Google verification code in metadata before deploying
 
-After editing your project locally, redeploy manually:
+---
 
-vercel --prod
+## 📄 License
 
+ISC License - See [LICENSE](LICENSE) file for details.
 
-✅ That’s it — Vercel will rebuild and redeploy your latest version.
+---
 
-🧩 Rollback (Optional)
+## 👤 Contact
 
-If something breaks after an update:
+**StarDev Creative** - Professional Web Development Agency
 
-Go to Vercel Dashboard → Deployments
-.
+- **Website**: [https://www.stardevcreative.com](https://www.stardevcreative.com)
+- **Phone**: +62 898 8025 033
+- **WhatsApp**: +62 896 1686 9977
+- **Email**: yusufpamungkas7@gmail.com
 
-Open your project.
+---
 
-Click Rollback on any previous deployment.
-
-Your site will instantly revert to that version.
-
-💡 Tips
-
-You can connect custom domains in Vercel:
-Project → Settings → Domains → Add Domain.
-
-For environment variables, go to
-Project → Settings → Environment Variables.
-
-To preview before production, push changes to a branch (like dev), and Vercel will create a preview URL automatically.
-
-🧠 Summary
-Action	Command / Location	Description
-Run Dev Server	npm run dev	Run locally on localhost:3000
-Build Project	npm run build	Create optimized build
-Deploy (CLI)	vercel --prod	Manual production deploy
-Update via Git	git push	Auto deploy via GitHub
-Rollback	Dashboard → Deployments	Revert to older version
-✨ Credits
-
-Built with ❤️ using Next.js
- and hosted on Vercel
-.
-
-Developed by StarDev — Web Development & Creative Solutions.
-📩 Contact: stardev-creative.vercel.app
+Built with ❤️ using Next.js and hosted on Vercel.
