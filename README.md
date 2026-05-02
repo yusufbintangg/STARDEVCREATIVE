@@ -5,8 +5,8 @@
 [![Next.js](https://img.shields.io/badge/Next.js-15-black?logo=next.js)](https://nextjs.org/)
 [![React](https://img.shields.io/badge/React-19-61DAFB?logo=react)](https://react.dev/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4-06B6D4?logo=tailwind-css)](https://tailwindcss.com/)
-[![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript)](https://www.typescriptlang.org/)
-[![License](https://img.shields.io/badge/License-ISC-green)](LICENSE)
+[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript)](https://www.ecma-international.org/)
+[![License](https://img.shields.io/badge/License-All_Rights_Reserved-red)](README.md)
 
 ---
 
@@ -228,7 +228,7 @@ Before going live, verify:
 
 ## 📄 License
 
-ISC License - See [LICENSE](LICENSE) file for details.
+All Rights Reserved. No part of this project may be reproduced or distributed without permission.
 
 ---
 
